@@ -1,0 +1,80 @@
+-<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="logo">
+      <img src="images/logo.svg">
+    </div>
+  <form>
+    <!-- <div class="logo">
+      <img src="images/logo.svg">
+    </div> -->
+    <div class="container">
+
+      <div class="input">
+
+        <p class="txt">
+          <label for="txt">Bill</label>
+          <input type="text" name="txt" id="txt">
+        </p>
+
+        Select Tip %
+        <p class="bd-grid">
+          <input type="button" class="btn" value="5%" onclick="myBtn(5)">
+          <input type="button" class="btn" value="10%" onclick="myBtn(10)">
+          <input type="button" class="btn" value="15%" onclick="myBtn(15)">
+          <input type="button" class="btn" value="25%" onclick="myBtn(25)">
+          <input type="button" class="btn" value="50%" onclick="myBtn(50)">
+          <input type="text" class="btn1" placeholder="custom" onkeyup="myBtn(this.value)">
+        </p>
+
+        <p>
+          <label for="txt1">Number of People</label>
+          <span class="errorMsg" id="errMsg"></span>
+          <input type="text" name="txt1" id="txt1">
+        </p>
+      </div>
+
+      <div class="output">
+
+        <div>
+          <p>
+            <span class="color">Tip Amount<br><span class="one">/ person</span></span><span class="two"><img src="images/icon-dollar.svg" class="dollar"><span id="amount">00</span></span>
+          </p>
+
+          <p>
+            <span class="color">Total<br><span class="one">/ person</span></span><span class="two"><img src="images/icon-dollar.svg" class="dollar"><span id="total">00</span></span>
+          </p>
+
+        </div>
+        <p><input type="reset" name="Reset" id="reset"></p>
+      </div>
+    </div>
+  </form>
+ 
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script type="text/javascript" src="script.js">
+    
+  </script>
+</body>
+</html>

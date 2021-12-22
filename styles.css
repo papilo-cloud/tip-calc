@@ -1,0 +1,298 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body 
+{
+	background: hsl(189, 41%, 97%);
+	margin-top: 0;
+	font-size: 18px;
+	font-family: sans-serif;
+	height: 100%;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+form 
+{
+	position: relative;
+	background: hsl(185, 41%, 84%);
+	padding-top: 0;
+	padding-bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+input
+{
+	width: 100%;
+	outline: none;
+	font-size: 18px;
+	padding: 12px;
+	border-radius: 6px;
+	background: hsl(189, 41%, 97%);
+	border: none;
+	text-align: right;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+input[type="text"]:hover
+{
+	border: 2px solid hsl(172, 67%, 45%);
+}
+.container
+{
+	position: relative;
+	/*width: 100%;*/
+	background: hsl(0, 0%, 100%);
+	height: calc(100vh - 100px);
+	margin-bottom: 0;
+	margin-top: 10px;
+	padding: 30px;
+	border-radius: 14px 14px 0 0 ;
+	display: grid;
+}
+.input
+{
+	position: relative;
+	width: 100%;
+	height: 70%;
+	background: inherit;
+	border-radius: 9px;
+}
+.input .bd-grid
+{
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: .6rem;
+	margin-bottom: 10px;
+}
+.logo
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	/*height: 100px;*/
+	top: 0;
+	left: 0;
+	right: 0;
+	background: hsl(185, 41%, 84%);
+}
+.input .btn, .btn1
+{
+	position: relative;
+	outline: none;
+	padding: 13px;
+	border: none;
+	border-radius: 6px;
+	font-size: 24px;
+	background: hsl(183, 100%, 15%);
+	color: hsl(0, 10%, 100%);
+	font-weight: 700;
+	text-align: center;
+	cursor: pointer;
+
+}
+.input .btn:hover
+{
+	color: hsl(183, 100%, 15%);
+	background: hsl(172, 67%, 45%);
+}
+.btn1
+{
+	color: hsl(183, 100%, 15%);
+	background: hsl(189, 41%, 97%);
+	color: hsl(183, 100%, 15%);
+	text-align: center;
+}
+.btn1:hover
+{
+	border: 2px solid hsl(172, 67%, 45%);
+}
+/*.input button:last-child
+{
+	background: hsl(189, 41%, 97%);
+	color: hsl(183, 100%, 15%);
+}
+.input button:last-child:hover
+{
+	border: 2px solid hsl(172, 67%, 45%);
+}*/
+.output
+{
+	position: relative;
+	width: 100%;
+	background: hsl(183, 100%, 15%);
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	/*margin-bottom: 20%;*/
+	border-radius: 12px;
+}
+.output p 
+{
+	position: relative;
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+
+}
+
+.one 
+{
+	font-size: 11px;
+	margin-bottom: 20px;
+	color: hsl(172, 67%, 45%);
+}
+.two 
+{
+	font-size: 29px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: hsl(172, 67%, 45%);
+}
+.dollar 
+{
+	width: 12px;
+	color: hsl(172, 67%, 45%);
+
+}
+.output p input[type="reset"] 
+{
+	margin-bottom: 0;
+	background: hsl(172, 67%, 45%);
+	text-align: center;
+	cursor: pointer;
+}
+.color
+{
+	color: hsl(0, 10%, 100%);
+}
+p 
+{
+	position: relative;
+}
+p.icon 
+{
+	position: absolute;
+	bottom: -40px;
+}
+.txt1
+{
+	border: 2px solid red;
+	outline: none;
+}
+.errorMsg
+{
+	margin-left: 40px;
+}
+
+@media screen and (min-width: 1024px)
+{
+	body
+	{
+		margin-top: 3rem;
+		margin-left: 3rem;
+		margin-right: 3rem;
+		height: calc(100vh - 3rem);
+	}
+	form 
+	{
+		position: relative;
+		background: hsl(185, 41%, 84%);
+		/*height: 100vh;*/
+		padding: 10%;
+		margin-bottom: 0;
+		padding-top: 0;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.container
+	{
+		margin-top: 90px;
+		position: relative;
+		width: 100%;
+		background: hsl(0, 0%, 100%);
+		height: 400px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 2rem;
+		padding: 30px;
+		border-radius: 14px;
+	}
+	.input .bd-grid
+	{
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: .6rem;
+		margin-bottom: 10px;
+	}
+	.input
+	{
+		position: relative;
+	}
+	.input p 
+	{
+		margin-bottom: 20px;
+	}
+	.output
+	{
+		position: relative;
+		width: 100%;
+		background: hsl(183, 100%, 15%);
+		padding: 20px;
+		/*display: flex;
+		justify-content: space-between;
+		flex-direction: column;*/
+		border-radius: 12px;
+		margin-bottom: 20px;
+	}
+	.output p 
+	{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.output div 
+	{
+		margin-bottom: 40px;
+	}
+	.two 
+	{
+		font-size: 36px;
+	}
+	.btn1
+	{
+		font-size: 20px
+	}
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
